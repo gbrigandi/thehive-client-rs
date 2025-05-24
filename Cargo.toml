@@ -8,7 +8,7 @@ edition = "2021"
 repository = "https://github.com/gbrigandi/thehive-client-rs"
 homepage = "https://github.com/gbrigandi/thehive-client-rs"
 documentation = "https://docs.rs/thehive-client" 
-keywords = ["thehive", "api", "security", "incidentresponse", "sirp", "soc", "automation"]
+keywords = ["thehive", "incidentresponse", "sirp", "soc", "automation"]
 categories = ["api-bindings", "web-programming::http-client", "asynchronous", "security"]
 
 [dependencies]

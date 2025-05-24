@@ -16,7 +16,7 @@ To use this client in your Rust project, add it as a dependency in your `Cargo.t
 
 ```toml
 [dependencies]
-thehive_client_rs = "0.1"
+thehive-client = "0.1"
 ```
 
 

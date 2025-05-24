@@ -1,0 +1,53 @@
+[package]
+name = "thehive-client"
+version = "0.1.0"
+authors = ["Gianluca Brigandi", "OpenAPI Generator team and contributors"]
+description = "Rust client for TheHive API, enabling programmatic management of alerts, cases, observables, tasks, and other security incident response entities."
+license = "MIT"
+edition = "2021"
+repository = "https://github.com/gbrigandi/thehive-client-rs"
+homepage = "https://github.com/gbrigandi/thehive-client-rs"
+documentation = "https://docs.rs/thehive-client" 
+keywords = ["thehive", "api", "security", "incidentresponse", "sirp", "soc", "automation"]
+categories = ["api-bindings", "web-programming::http-client", "asynchronous", "security"]
+
+[dependencies]
+serde = { version = "^1.0", features = ["derive"] }
+serde_with = { version = "^3.8", default-features = false, features = ["base64", "std", "macros"] }
+serde_json = "^1.0"
+serde_repr = "^0.1"
+url = "^2.5"
+reqwest = { version = "^0.12", default-features = false, features = ["json", "multipart"] }
+chrono = "0.4.41"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+
+[[example]]
+name = "create_minimalistic_case"
+path = "examples/case/create_minimalistic_case.rs"
+
+[[example]]
+name = "create_and_fetch_case"
+path = "examples/case/create_and_fetch_case.rs"
+
+[[example]]
+name = "create_update_fetch_case"
+path = "examples/case/create_update_fetch_case.rs"
+
+[[example]]
+name = "fetch_all_cases"
+path = "examples/case/fetch_all_cases.rs"
+
+[[example]]
+name = "create_minimalistic_alert"
+path = "examples/alert/create_minimalistic_alert.rs"
+
+[[example]]
+name = "create_and_fetch_alert"
+path = "examples/alert/create_and_fetch_alert.rs"
+
+[[example]]
+name = "create_update_fetch_alert"
+path = "examples/alert/create_update_fetch_alert.rs"
+
